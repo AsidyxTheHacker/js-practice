@@ -51,7 +51,10 @@ let part = str.slice(7, 13); // numbers represent character in string
 let str2 = "Apple, Banana, Kiwi"; // The difference is that start and end values less than 0 are treated as 0
 let part2 = str.substring(7, 13); // numbers represent character in string
 // substr
-let str3 = "Apple, Banana, Kiwi";
+let str3 = "Apple, Banana, Kiwi"; // The difference is that the second parameter specifies the length of the extracted part.
 let part3 = str.substr(7, 6);
+// replace
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools"); // case sensitive. "MICROSOFT" will not work
 
 document.write("this is funny text lol")
