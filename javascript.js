@@ -24,4 +24,34 @@ const COLOR_ORANGE = "#FF7F00";
 let color = COLOR_ORANGE;
 //alert(color); // #FF7F00
 
+const string = "The revolution will not be televised.";
+console.log(string);
+const badString = string;
+console.log(badString);
+
+const one = "Hello, ";
+const two = "how are you?";
+const joined = one + two;
+console.log(joined); // "Hello, how are you?"
+
+const button =document.querySelector("button");
+function greet() {
+    const name = prompt("What is your name?");
+    alert(`Hello ${name}, nice to see you!`);
+  }
+  button.addEventListener("click", greet);
+
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length;
+
+// slice string
+let str = "Apple, Banana, Kiwi"; // starting position of 0
+let part = str.slice(7, 13); // numbers represent character in string
+// substring
+let str2 = "Apple, Banana, Kiwi"; // The difference is that start and end values less than 0 are treated as 0
+let part2 = str.substring(7, 13); // numbers represent character in string
+// substr
+let str3 = "Apple, Banana, Kiwi";
+let part3 = str.substr(7, 6);
+
 document.write("this is funny text lol")
