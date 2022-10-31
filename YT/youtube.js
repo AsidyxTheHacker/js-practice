@@ -23,3 +23,15 @@ document.getElementById("p3").innerHTML = "Enrolled: " + student;
 let students = 20;
 students = students + 1; // students += 1;
 console.log(students);
+
+//let username = window.prompt("What is your name?")
+//console.log(username);
+let username;
+window.onload = function(){
+document.getElementById("myButton").onclick = function(){
+
+        username = document.getElementById("myText").value;
+        console.log(username);
+        document.getElementById("myLabel").innerHTML = "Hello " + username;
+    }
+}
