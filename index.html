@@ -54,5 +54,28 @@
         typeof null // object(2)
         typeof alert // function(3)
     </script>
+    <script>
+        function add7(a) {
+            return a + 7;
+
+            console.log(add7);
+        }
+        function multiply(a, b) {
+            return a * b;
+            
+            console.log(multiply);
+        }
+        function capitalize(wordle) {
+            const capitalized = wordle.charAt(0).toUpperCase() + wordle.slice(1);
+             return capitalized;
+        }
+
+        const thingy = prompt('Enter a string: ');
+
+        const result = capitalize(thingy);
+
+        console.log(result);
+
+    </script>
 </body>
 </html>

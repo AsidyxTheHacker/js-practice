@@ -38,7 +38,7 @@ console.log(joined); // "Hello, how are you?"
 const button =document.querySelector("button");
 function greet() {
     const name = prompt("What is your name?");
-    alert(`Hello ${name}, nice to see you!`);
+    //alert(`Hello ${name}, nice to see you!`);
   }
   button.addEventListener("click", greet);
 
@@ -46,7 +46,7 @@ let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = txt.length;
 
 // slice string
-let str = "Apple, Banana, Kiwi"; // starting position of 0
+let str = "Apple, Banana, kiwi"; // starting position of 0
 let part = str.slice(7, 13); // numbers represent character in string
 // substring
 let str2 = "Apple, Banana, Kiwi"; // The difference is that start and end values less than 0 are treated as 0
@@ -78,5 +78,36 @@ let newText = text.replace("Microsoft", "W3Schools"); // case sensitive. "MICROS
 // - && (AND)
 // - ! (NOT)
 // - ?? (Nullish Coalescing)
+
+// function nameofFunction(parameter1, parameter2, etc.)
+function showMessage() {
+  //alert( 'Hello Everyone!');
+}
+
+showMessage(); // will execute the function above
+
+// [LOCAL VARIABLES] - A variable declared inside a function is only visible inside that function
+function showMessage2() {
+  let message = "Hello, I'm JavaScript!";
+}
+
+showMessage2();
+//alert(message); // will cause an error (variable is only allowed inside the function)
+
+// [OUTER VARIABLES] - The outer variable is only used if there’s no local one
+let playerName = 'John';
+function showMessage3() {
+  let message1 = 'Hello, ' + playerName;
+  //alert(message);
+}
+
+  showMessage3(); // Hello, John (lets outer variables inside the function)
+
+// [PARAMETERS] - The variable listed inside the parentheses in the function declaration
+function showMessage4(from, text) { //parameters 'from' and 'text'
+  //alert(from + ': ' + text);
+}
+
+showMessage4('Ann', "Hello!"); // Ann: Hello!
 
 document.write("this is funny text lol")
